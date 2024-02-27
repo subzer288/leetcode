@@ -1,6 +1,6 @@
-#Leetcode
+# Leetcode
 
-##In this repository you will find the leetcode problems that I solved. enjoy it ;)
+## In this repository you will find the leetcode problems that I solved. enjoy it ;)
 
 | # | Title | Language | Difficulty |
 |---| ----- | -------- | ---------- |
