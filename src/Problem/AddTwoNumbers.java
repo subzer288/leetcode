@@ -1,4 +1,4 @@
-/*
+package Problem;/*
 You are given two non-empty linked lists representing two non-negative integers.
 The digits are stored in reverse order, and each of their nodes contains a single digit.
 Add the two numbers and return the sum as a linked list.
@@ -16,15 +16,11 @@ Output: [0]
  */
 
 
-public class AddTwoNumbers {
-    private ListNode l1;
-    private ListNode l2;
+import Utils.ListNode;
 
-    AddTwoNumbers(ListNode l1, ListNode l2) {
-        this.l1 = l1;
-        this.l2 = l2;
-    }
-    public ListNode solution(){
+public class AddTwoNumbers {
+
+    public static ListNode solution(ListNode l1, ListNode l2){
         ListNode dummyHead = new ListNode(0);
         ListNode curr = dummyHead;
         int carry = 0;

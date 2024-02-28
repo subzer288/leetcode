@@ -1,4 +1,4 @@
-/*
+package Problem;/*
 Given an array of integers nums and an integer target, return indices of the two numbers
 such that they add up to target.
 
@@ -23,22 +23,14 @@ Output: [0,1]
 import java.util.HashMap;
 
 public class TwoSums {
-    private int[] nums;
-    private int target;
-
-    TwoSums(int [] nums, int target){
-        this.nums = nums;
-        this.target = target;
-    }
-
-    int[] solution(){
+    public static int[] solution(int[] nums, int target){
         HashMap<Integer, Integer> ans = new HashMap<>();
-        for(int i = 0; i<this.nums.length; i++){
-            int complement = this.target - this.nums[i];
+        for(int i = 0; i < nums.length; i++){
+            int complement = target - nums[i];
             if(ans.containsKey(complement)){
                 return new int[] { ans.get(complement),i };
             }
-            ans.put(this.nums[i], i);
+            ans.put(nums[i], i);
         }
         return null;
     }
