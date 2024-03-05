@@ -13,5 +13,6 @@ public class Main {
         ));
         System.out.println(MedianOfTwoSortedArrays.solution(new int[]{1,2,3}, new int[]{4,5,6}));
         System.out.println(LongestPalindromicSubstring.solution("nkcbbdjnhbasdadabcgthkjyllyjkhtgcbadasnakjnibabadsmndv"));
+        System.out.println(ZigzagConversion.solution("PAYPALISHIRING",3));
     }
 }
